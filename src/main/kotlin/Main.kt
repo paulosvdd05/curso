@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
-    val nome = "Paulo"
-    val sobreNome = "Dias"
+    helloWorld()
+}
 
-    println("Olá, $nome $sobreNome")
-    println("Double: ${Double.MAX_VALUE}")
+fun helloWorld(): Unit{
+    println("Hello, world!");
 }
