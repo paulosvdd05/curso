@@ -1,12 +1,12 @@
 fun main(args: Array<String>) {
-    helloWorld()
-    println(sum(10,12))
-   println( divisao(10f, 3.5f))
+    val str = "Kotlin"
+    println("Tamanho string: ${str.length}")
+
+    println("Posicao 0 da string: ${str[0]}")
+
+    println(str.startsWith("Ko"))
+
+    println(str.endsWith("abc"))
 }
 
-fun helloWorld() = println("Hello, world!");
 
-
-fun sum (a:Int, b:Int) = (a+b)
-
-fun divisao(a:Float, b:Float) = a/b
