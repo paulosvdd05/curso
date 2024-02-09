@@ -5,6 +5,6 @@ import org.junit.jupiter.api.Test
 class MainTest {
     @Test
     fun testCountXO(){
-        Assertions.assertTrue(countXO("xxoo"))
+        Assertions.assertEquals(countXO("xxoo"), true)
     }
 }
