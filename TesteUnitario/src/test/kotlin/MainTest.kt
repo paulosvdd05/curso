@@ -7,6 +7,10 @@ class MainTest {
     @Test
     @DisplayName("Teste metodo xxoo")
     fun testCountXO(){
-        Assertions.assertEquals(countXO("xxoo"), true)
+        Assertions.assertTrue(countXO("xxoo"))
+        Assertions.assertTrue(countXO("xoo"))
+        Assertions.assertTrue(countXO("xxoxxo"))
+        Assertions.assertTrue(countXO("xxoxoo"))
+
     }
 }
