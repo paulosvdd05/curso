@@ -1,5 +1,6 @@
 import org.example.countXO
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
@@ -19,6 +20,12 @@ class MainTest {
             {Assertions.assertTrue(countXO("xxoxxo"))},
 
         )
+
+    }
+
+    @Test
+    @Disabled
+    fun naoImplementado(){
 
     }
 }
