@@ -27,5 +27,12 @@ class MainTest {
         assertThrows<NullPointerException> { abc() }
     }
 
+    @Test
+    fun provocacao(){
+        Assertions.assertNotNull(countXO("dhasiodhaohasdas"))
+        Assertions.assertNotNull("xxoo")
+        Assertions.assertNotNull("xxxxxxxxxo")
+    }
+
 
 }
