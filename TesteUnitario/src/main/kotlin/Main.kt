@@ -20,10 +20,11 @@ fun countXO(str: String): Boolean{
 }
 
 fun abc() : Boolean{
-    return  true;
+    val str: String? = null
+    return str!!.length == 0
+    //throw NullPointerException()
 }
 
 fun main() {
-    println(countXO("xxoo"));
-    println(countXO("xxo"));
+    abc()
 }

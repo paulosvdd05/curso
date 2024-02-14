@@ -21,4 +21,11 @@ class MainTest {
     Assumptions.assumeTrue(countXO("xxoo"))
        Assertions.assertTrue((abc()))
    }
+
+    @Test
+    fun exception(){
+        assertThrows<NullPointerException> { abc() }
+    }
+
+
 }
