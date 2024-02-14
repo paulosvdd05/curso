@@ -19,6 +19,10 @@ fun countXO(str: String): Boolean{
 
 }
 
+fun abc() : Boolean{
+    return  true;
+}
+
 fun main() {
     println(countXO("xxoo"));
     println(countXO("xxo"));
