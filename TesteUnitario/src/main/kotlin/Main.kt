@@ -1,30 +1,33 @@
 package org.example
 
-fun countXO(str: String): Boolean{
-    val str = str.lowercase();
-    var countO = 0;
-    var countX = 0;
-
-    for (i in str.indices){
-        if(str[i] == 'x'){
-            countX ++;
-        }
-        if(str[i] == 'o'){
-            countO ++;
-        }
+fun portaria(idade: Int, tpConvite: String, cod: String): String {
+    if (idade < 18) {
+        return "Negado."
     }
 
-    return countX == countO && countO != 0;
+    if (tpConvite != "") {
+        val tipoConvite = tpConvite.lowercase()
 
+        if (tipoConvite != "comum" && tipoConvite != "premium" && tipoConvite != "luxo") {
+            return "Negado."
+        }
 
+        if (cod != "") {
+            val codigo = cod.lowercase()
+            return if (tipoConvite == "comum" && codigo.startsWith("xt")) {
+                "Welcome."
+            } else if ((tipoConvite == "premium" || tipoConvite == "luxo") && codigo.startsWith("xl")) {
+                "Welcome."
+            } else {
+                "Negado."
+            }
+        }
+    }
+    return "Negado."
 }
 
-fun abc() : Boolean{
-    val str: String? = null
-    return str!!.length == 0
-    //throw NullPointerException()
-}
+
 
 fun main() {
-    abc()
+    print(portaria(90, "comum", "xt"))
 }
