@@ -25,9 +25,3 @@ fun portaria(idade: Int, tpConvite: String, cod: String): String {
     }
     return "Negado."
 }
-
-
-
-fun main() {
-    print(portaria(90, "comum", "xt"))
-}
