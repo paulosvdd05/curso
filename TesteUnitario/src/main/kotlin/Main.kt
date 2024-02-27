@@ -1,27 +1,9 @@
 package org.example
 
-fun portaria(idade: Int, tpConvite: String, cod: String): String {
-    if (idade < 18) {
-        return "Negado."
-    }
+fun main(){
 
-    if (tpConvite != "") {
-        val tipoConvite = tpConvite.lowercase()
+}
 
-        if (tipoConvite != "comum" && tipoConvite != "premium" && tipoConvite != "luxo") {
-            return "Negado."
-        }
+fun endereco(rua: String, cidade: String, estado: String, cep: String, num:Int = 0){
 
-        if (cod != "") {
-            val codigo = cod.lowercase()
-            return if (tipoConvite == "comum" && codigo.startsWith("xt")) {
-                "Welcome."
-            } else if ((tipoConvite == "premium" || tipoConvite == "luxo") && codigo.startsWith("xl")) {
-                "Welcome."
-            } else {
-                "Negado."
-            }
-        }
-    }
-    return "Negado."
 }
