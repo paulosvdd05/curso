@@ -1,9 +1,9 @@
 package org.example
 
 fun main(){
-    endereco("street", "cidade", "sp", "568")
+    endereco(cidade= "street", estado = "sp", rua = "street")
 }
 
-fun endereco(rua: String, cidade: String, estado: String, cep: String, num:Int = 0){
+fun endereco(rua: String, cidade: String, estado: String, cep: String = "", num:Int = 0){
 
 }
