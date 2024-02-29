@@ -1,9 +1,13 @@
 package org.example
 
 fun main(){
-    endereco(cidade= "street", estado = "sp", rua = "street")
+    println(media(10f,8f))
 }
 
-fun endereco(rua: String, cidade: String, estado: String, cep: String = "", num:Int = 0){
-
+fun media(vararg notas:Float): Float{
+    var soma = 0f;
+    for(n in notas){
+        soma += n
+    }
+    return  (soma/notas.size)
 }
