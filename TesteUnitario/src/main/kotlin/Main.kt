@@ -1,13 +1,19 @@
 package org.example
 
 fun main(){
-    println(media(10f,8f))
+    println(media(false,10f,8f, "", false))
 }
 
-fun media(vararg notas:Float): Float{
+fun <T, J> media( abc: J,vararg notas: T): Float{
     var soma = 0f;
     for(n in notas){
-        soma += n
+        if(n is Float){
+            soma += n
+        }
+
+        if(n is String){
+
+        }
     }
     return  (soma/notas.size)
 }
