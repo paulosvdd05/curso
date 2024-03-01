@@ -1,4 +1,5 @@
 class Pessoa( val anoNascimento:Int, var nome: String){
+    var olhos: String = ""
     fun dormir(){
 
     }
@@ -15,5 +16,6 @@ fun main() {
 
     pessoa.nome;
     pessoa.dormir();
+    pessoa.olhos = "Azul"
 
 }
