@@ -1,4 +1,9 @@
+class Pessoa
+
 fun main() {
-    println("Hello World!")
+    // class - comportamentos e atributos
+
+    //classe (instancia) objetos
+    var pessoa: Pessoa = Pessoa()
 
 }
