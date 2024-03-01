@@ -1,11 +1,14 @@
 class Pessoa(
-    val anoNascimento:Int
+    val anoNascimento:Int,
+    var nome: String
 )
 
 fun main() {
     // class - comportamentos e atributos
 
     //classe (instancia) objetos
-    var pessoa: Pessoa = Pessoa(2005)
+    var pessoa: Pessoa = Pessoa(2005, "Paulo")
+    pessoa.anoNascimento;
+    pessoa.nome;
 
 }
