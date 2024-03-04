@@ -1,7 +1,8 @@
 class Pessoa( val anoNascimento:Int, var nome: String){
-    var documento: String = ""
-
-    constructor(anoNascimento: Int, nome: String, doc:String) : this(anoNascimento, nome)
+    var doc: String? = null
+    constructor(anoNascimento: Int, nome: String, doc:String) : this(anoNascimento, nome){
+        this.doc = doc;
+    }
     fun dormir(){
 
     }
@@ -20,9 +21,8 @@ fun main() {
 
     pessoa.nome;
     pessoa.dormir();
-    pessoa.documento = "Azul"
 
-    Exception();
-    Exception("Mensagem de erro")
+
+    pessoa.doc;
 
 }
