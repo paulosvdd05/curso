@@ -1,6 +1,9 @@
 class Animal (var especie: String){
     init{
-        println("asdf")
+        println("init")
+    }
+    init{
+        println("init2")
     }
 }
 
