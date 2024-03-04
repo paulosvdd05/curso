@@ -2,6 +2,10 @@ class Pessoa( val anoNascimento:Int, var nome: String){
     var doc: String? = null
     constructor(anoNascimento: Int, nome: String, doc:String) : this(anoNascimento, nome){
         this.doc = doc;
+
+        if (doc == ""){
+            doc == "INSIRA A LOGICA"
+        }
     }
     fun dormir(){
 
