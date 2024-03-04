@@ -1,12 +1,20 @@
 class Animal (var especie: String){
+    var fala: String = ""
     init{
-        println("init")
+        if(especie == "cachorro"){
+            fala = "au"
+            }else if(especie == "gato"){
+                fala = "miau"
+        }
+
     }
-    init{
-        println("init2")
+
+    fun falar(){
+        println(fala)
     }
+
 }
 
 fun main(){
-    Animal("Cachorro")
+    Animal("gato").falar()
 }
