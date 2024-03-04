@@ -22,4 +22,7 @@ fun main() {
     pessoa.dormir();
     pessoa.documento = "Azul"
 
+    Exception();
+    Exception("Mensagem de erro")
+
 }
