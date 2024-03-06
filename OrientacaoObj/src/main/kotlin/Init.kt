@@ -16,5 +16,6 @@ class Animal (var especie: String){
 }
 
 fun main(){
-    Animal("gato").falar()
+    var p: Planeta = Planeta()
+    p.nome
 }
