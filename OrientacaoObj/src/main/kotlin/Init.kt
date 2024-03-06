@@ -1,21 +1,18 @@
 class Animal (var especie: String){
 
     var fala: String = ""
-    init{
-        if(especie == "cachorro"){
-            fala = "au"
-            }else if(especie == "gato"){
-                fala = "miau"
+        get(){
+            println("Acesso Get")
+            return field
+        }
+        set(value){
+            println("Acesso set")
+            field = value
         }
 
-    }
-
-    fun falar(){
-        println(fala)
-    }
 }
 
 fun main(){
-    var p: Planeta = Planeta()
-    p.nome
+    var a = Animal("Cachorro")
+    a.fala = "auuu"
 }
