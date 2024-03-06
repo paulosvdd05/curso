@@ -1,4 +1,5 @@
 class Animal (var especie: String){
+
     var fala: String = ""
     init{
         if(especie == "cachorro"){
@@ -12,7 +13,6 @@ class Animal (var especie: String){
     fun falar(){
         println(fala)
     }
-
 }
 
 fun main(){
